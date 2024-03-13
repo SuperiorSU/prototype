@@ -1,7 +1,7 @@
 import React from 'react'
 import test from "../assets/testimg.webp"
 import Image from 'next/image'
-const Card = () => {
+const Card = ({img}) => {
   return (
     <div>
         <div  className="md:ms-[50px]  h-[320px]">
@@ -12,7 +12,7 @@ const Card = () => {
                   </div>
               </div>  
               <div className="text-center">
-              <div className="mx-auto"><Image src={test} alt=""/></div>
+              <div className="mx-auto"><Image src={img} alt=""/></div>
               <h2 className="text-xl font-semibold text-white mt-2">
                 EVENT HEADING HERE
               </h2>
