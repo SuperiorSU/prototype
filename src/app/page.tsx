@@ -14,7 +14,7 @@ export default function Home() {
   useEffect(()=>{
     Aos.init()
   })
-
+  
   return (
     <main className="flex min-h-screen flex-col items-center justify-between border- bg-black">
       {/* header */}
