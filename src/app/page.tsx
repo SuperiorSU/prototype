@@ -1,17 +1,11 @@
 "use client"
 import Image from "next/image";
 import Card from "../components/Card"
-// import VideoBackground from "../components/VideoBackground"
-import hulk from "../assets/hulkbg.jpg"
-import iron from "../assets/ironmanbg.jpg"
-import spider from "../assets/spidermanbg.jpg"
-import Vision from "../assets/visionbg.jpg"
 import Button from "../components/Button"
-
-// const raleway = Raleway({
-//   subsets:['latin'],
-//   weight:['900'],
-// })
+import event1 from '../assets/latesteventsimg1.jpg'
+import event2 from '../assets/latesteventsimg2.jpg'
+import event3 from '../assets/latesteventsimg3.jpg'
+import weare from '../assets/weareavengers.jpg'
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between border- bg-black">
@@ -24,7 +18,7 @@ export default function Home() {
               <h2 className="text-black text-[72px] mt-[-20px] font-bold">SUJAL</h2>
               <div className="h-[.5px] bg-white "></div>
               <div className="mt-5">
-              <button className="text-red hover:before:bg-redborder-red-500 relative h-[60px] w-[180px] overflow-hidden border border-red-500 bg-white px-3 text-red-500 shadow-md transition-all before:absolute before:bottom-0 before:left-0 before:top-0 before:z-0 before:h-full before:w-0 before:bg-black before:transition-all before:duration-500 hover:text-white hover:shadow-black/50 hover:before:left-0 hover:before:w-full"><span className="relative z-10">Explore More</span></button>
+              <button className="text-red hover:before:bg-redborder-red-500 relative h-[60px] w-[180px] overflow-hidden border border-red-500 bg-white px-3 text-red-500 shadow-md transition-all before:absolute before:bottom-0 before:left-0 before:top-0 before:z-0 before:h-full before:w-0 before:bg-black before:transition-all before:duration-500 hover:text-white hover:shadow-black/50 hover:before:left-0 hover:before:w-full hover:before:skewX(35)"><span className="relative z-10">Explore More</span></button>
               </div>
               
             </div>
@@ -38,9 +32,9 @@ export default function Home() {
         <h2 className="font-bold text-white text-[72px]">LATEST EVENTS</h2>
         <div className="flex gap-10 justify-evenly">
         <div className="w-[1px] bg-white/50"></div>
-        <Card img={iron}/>
-        <Card img={hulk}/>
-        <Card img={spider}/>
+        <Card img={event1} EventHeading="The Final Showdown: Thanos Returns" desc="In the Avengers' last stand, Thanos returns with the Infinity Gauntlet, prompting a perilous mission to reverse the Snap's devastation and save the universe."/>
+        <Card img={event2} EventHeading="Ultron Unleashed: The AI Apocalypse" desc= "The Avengers face their greatest threat as Ultron, an AI gone rogue, launches a relentless assault to annihilate humanity."/>
+        <Card img={event3} EventHeading="Rise of Doc Ock: The Octopus Strikes" desc="Doctor Octavius unleashes chaos with his mechanical tentacles, and the Avengers race to stop his sinister plans."/>
       </div>
 
       </div>
@@ -55,7 +49,7 @@ export default function Home() {
             </div>
           </div>
           <div className="col-span-3 border-[.5px] border-white">
-            <Image src={Vision} alt="" className=""/>
+            <Image src={weare} alt="" className=""/>
           </div>
         </div>
       </div>
