@@ -1,7 +1,7 @@
 "use client"
 import Image from "next/image";
 import Card from "../components/Card"
-import VideoBackground from "../components/VideoBackground"
+// import VideoBackground from "../components/VideoBackground"
 import hulk from "../assets/hulkbg.jpg"
 import iron from "../assets/ironmanbg.jpg"
 import spider from "../assets/spidermanbg.jpg"
