@@ -12,6 +12,7 @@ const Footer = () => {
             <p className='text-center p-4 text-[22px]'>JOIN US TO AVENGE WITH THE ABENGERS</p>
             <div className='bg-black text-center flex justify-center gap-5 p-4'>
                 <div className='p-5 flex gap-5'>
+                    
                     <FaDiscord className='text-white text-[32px]'/>
                     <FaFacebook className='text-white text-[32px]' />
                     <FaInstagramSquare className='text-white text-[32px]'/>
