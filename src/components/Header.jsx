@@ -19,8 +19,10 @@ const Header = () => {
               <li>TEAMS</li>
             </ul>
           </div>
+        
           <div>
             <Image src={logo} height="50" alt=""/>
+           
           </div>
         </div>
     </div>
