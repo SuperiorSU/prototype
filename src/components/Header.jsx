@@ -4,7 +4,7 @@ import logo from  '../assets/ALogo.png'
 const Header = () => {
   return (
     <div>
-        <div className='flex flex-row justify-between p-5 items-center text-white bg-purple-950'>
+        <div className='flex flex-row justify-between p-2 items-center text-white border-b-[1px] border-white/55 bg-purple-950'>
           <div>
             <div className="logo">
               <Image src={logo} height="50" alt=""/>
