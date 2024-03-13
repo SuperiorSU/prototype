@@ -1,9 +1,10 @@
 import React from 'react'
 import Image from 'next/image'
 import logo from  '../assets/ALogo.png'
+
 const Header = () => {
   return (
-    <div>
+    <div >
         <div className='flex flex-row justify-between p-5 items-center text-white bg-purple-950'>
           <div>
             <div className="logo">
