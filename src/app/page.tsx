@@ -2,12 +2,15 @@
 import Image from "next/image";
 import Card from "../components/Card"
 import Button from "../components/Button"
-<<<<<<< HEAD
 import event1 from '../assets/latesteventsimg1.jpg'
 import event2 from '../assets/latesteventsimg2.jpg'
 import event3 from '../assets/latesteventsimg3.jpg'
 import weare from '../assets/weareavengers.jpg'
 import thorncaptain from '../assets/thorncaptain.png'
+import { useAuthState } from "react-firebase-hooks/auth";
+import { auth } from "@/firebase";
+import { useState } from "react";
+
 import Aos from "aos";
 import 'aos/dist/aos.css';
 import { useEffect } from "react";
@@ -16,39 +19,21 @@ export default function Home() {
     Aos.init()
   })
 
-  return (
-    <main className="flex min-h-screen flex-col items-center justify-between border- bg-black">
-      {/* header */}
-      <div className="w-full h-[60vh] flex bg-red-500">
-=======
-import { useAuthState } from "react-firebase-hooks/auth";
-import { auth } from "@/firebase";
-import { useState } from "react";
-
-
-// const raleway = Raleway({
-//   subsets:['latin'],
-//   weight:['900'],
-// })
-export default function Home() {
   const [ user] = useAuthState(auth)
+
+
+
   
   return (
     <main className="flex min-h-screen flex-col items-center justify-between border- bg-black">
       {/* header */}
       <div className="w-full h-[60vh] bg-red-500 ">
->>>>>>> 97399d6966a2f22ac1a8904a6a9fa9b8b967074e
         <div className="flex flex-row flex-wrap gap-3">
           <div className="w-[1px] bg-white/50 ms-[30px]"></div>
           <div className=" p-4 ps-20 w-[45%]">
             <div className="mt-[30%]">
-<<<<<<< HEAD
-              <h1 className="text-white text-[32px] text-start font-bold" >Welcome</h1>
-              <h2 className="text-black text-[72px] mt-[-20px] font-bold">SUJAL</h2>
-=======
               <h1 className="text-white text-[32px] text-start font-bold">Welcome</h1>
               <h2 className="text-black text-[72px] mt-[-20px] font-bold">{user == null ? 'User' : user?.displayName}</h2>
->>>>>>> 97399d6966a2f22ac1a8904a6a9fa9b8b967074e
               <div className="h-[.5px] bg-white "></div>
               <div className="mt-5">
               <button className="text-red hover:before:bg-redborder-red-500 relative h-[60px] w-[180px] overflow-hidden border border-red-500 bg-white px-3 text-red-500 shadow-md transition-all before:absolute before:bottom-0 before:left-0 before:top-0 before:z-0 before:h-full before:w-0 before:bg-black before:transition-all before:duration-500 hover:text-white hover:shadow-black/50 hover:before:left-0 hover:before:w-full hover:before:skewX(35)"><span className="relative z-10">Explore More</span></button>
