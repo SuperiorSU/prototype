@@ -9,7 +9,7 @@ const Footer = () => {
   return (
     <div>
         <div className='bg-black/35'>
-            <p className='text-center p-4 text-[22px]'>JOIN US TO AVENGE WITH THE ABENGERS</p>
+            <p className='text-center p-4 text-[22px]'>JOIN US TO AVENGE WITH THE AVENGERS</p>
             <div className='bg-black text-center flex justify-center gap-5 p-4'>
                 <div className='p-5 flex gap-5'>
                     
