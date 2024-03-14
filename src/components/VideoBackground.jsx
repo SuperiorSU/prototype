@@ -1,12 +1,12 @@
-// components/VideoBackground.js
-import React from 'react';
+import React from "react";
+import styles from "./VideoBackground.module.css"; // Import CSS module for styling
 
-const VideoBackground = ({  }) => {
+const VideoBackground = () => {
   return (
-    <div className="video-background">
-      <video autoPlay src={require('../assets/head_vid.mp4')} loop muted playsInline/>
-      
-      
+    <div className={styles.videoBackground}>
+      <video autoPlay loop muted className={styles.video}>
+        <source src="/head_vid.mp4" type="video/mp4" />
+      </video>
     </div>
   );
 };
