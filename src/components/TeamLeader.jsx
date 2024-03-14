@@ -1,65 +1,77 @@
-"use client"
-import React from 'react';
-import { useState } from 'react';
-
+import React from 'react'
+import ironman from "@/assets/3-2-iron-man-png.png";
+import wan from "@/assets/wandabg.jpg";
+import iron from "@/assets/ironmanbg.jpg";
+import natasha from "@/assets/natasha.png"
+import captain from"@/assets/pngimg.com_captain_america_PNG64.png"
+import thor from "@/assets/thorbg.jpg";
+import hulk from "@/assets/hulkbg.jpg";
+import hulk1 from "@/assets/hulk.png";
+import hawk from "@/assets/hawkeyebg.jpg";
+import spider from "@/assets/spidermanbg.jpg";
+import cap from "@/assets/captainamericabg.jpg";
+import vis from "@/assets/visionbg.jpg";
+import agent1 from "@/assets/agent1.png"
+import black from "@/assets/black.png"
+import natashabg from "@/assets/natashag.jpg"
+import blackbg from "@/assets/blackbg.jpg"
 const TeamLeader = () => {
-  const [menuActive, setMenuActive] = useState(false);
-  const [marginLeft, setMarginLeft] = useState(0);
-
-  const menuToggle = () => {
-    setMenuActive(!menuActive);
-  };
-
-  const slideLeft = () => {
-    setMarginLeft(prev => prev + 264);
-  };
-
-  const slideRight = () => {
-    setMarginLeft(prev => prev - 264);
-  };
-
+    var settings = {
+        dots: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      };
+    const leader = [
+        {
+            id:1,
+            name: "Tony Stark",
+            alias: "IRON MAN",
+            image: ironman,
+        },
+        {
+            id:2,
+            name: "Thor",
+            alias: "God Of Thunder",
+            image: thor,
+        },
+        {
+            id:3,
+            name: "Captain America",
+            alias: "The First Avenger",
+            image: cap,
+        },
+        {
+            id:1,
+            name: "Hulk",
+            alias: "Smasher",
+            image: hulk,
+        },
+        {
+            id:4,
+            name: "Black Panther",
+            alias: "T'Chala",
+            image: blackbg,
+        },
+        {
+            id:5,
+            name: "Spider Man",
+            alias: "Peter Parker",
+            image: spider,
+        },
+        {
+            id:6,
+            name: "Tony Stark",
+            alias: "IRON MAN",
+            image: ironman,
+        },
+    ]
   return (
-    <div className="hero bg-cover bg-bottom relative min-h-screen overflow-x-hidden" style={{ backgroundImage: 'url(/images/02.jpg)' }}>
-      <nav className="flex justify-between items-center absolute top-0 left-0 w-full px-6 z-10 bg-opacity-25">
-        <div className="logo text-xl font-semibold text-white">
-          go<span className="text-yellow-500">TRAVEL</span>
-        </div>
-        <ul className={`nav flex ${menuActive ? 'flex-col items-center justify-center opacity-100 top-0 right-0' : 'opacity-0 -top-full right-full'} fixed bg-yellow-600 w-full h-screen transition duration-500 ease-in-out`}>
-          <li>Home</li>
-          <li>Places</li>
-          <li>Visitors</li>
-          <li>Travel</li>
-          <li>Hotels</li>
-          <li>Bookings</li>
-        </ul>
-        <div className="toggler cursor-pointer" onClick={menuToggle}>
-          <i className={`fas ${menuActive ? 'fa-times' : 'fa-bars'} text-white text-2xl`}></i>
-        </div>
-      </nav>
+    <div>
 
-      <div className="intro flex flex-wrap justify-center items-end z-20 relative">
-        <div className="hero-content w-2/5 p-36 text-white">
-          <div className="line w-12 h-1 bg-white mb-8"></div>
-          <h4 className="text-3xl mb-6">Destination Shire</h4>
-          <h1 className="text-6xl mb-4">Valley<br />of Dreams</h1>
-          <p>Welcome to the heart of Europe. Experience nature the way mother nature intended.</p>
-          <i className="fas fa-plane bg-orange text-white rounded-full p-4 transform rotate-45 inline-block mt-16 mr-8"></i>
-          <a href="" className="btn inline-block mt-10 px-8 py-4 bg-yellow-600 text-white font-semibold rounded-full">Book your destination</a>
-        </div>
-
-        <div className="carousel-control-div w-3/5 relative">
-          <div className="carousel-controls absolute bottom-0 left-16">
-            <i className="fas fa-chevron-left left text-white text-4xl bg-yellow-600 p-5 rounded-full cursor-pointer" onClick={slideLeft}></i>
-            <i className="fas fa-chevron-right right text-white text-4xl bg-yellow-600 p-5 rounded-full cursor-pointer ml-4" onClick={slideRight}></i>
-          </div>
-
-          <div className="carousel-indicator absolute bottom-0 right-0">
-            <p><span>00</span></p>
-          </div>
-        </div>
-      </div>
     </div>
-  );
-};
+  )
+}
 
-export default TeamLeader;
+export default TeamLeader
