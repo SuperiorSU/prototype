@@ -48,6 +48,11 @@ const Header = () => {
                 GALLERY
               </Link>
             </li>
+            <li>
+            <Link href ="/about">
+                ABOUT
+              </Link>
+            </li>
           </ul>
         </div>
 

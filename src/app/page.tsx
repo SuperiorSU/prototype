@@ -7,6 +7,7 @@ import event2 from '../assets/latesteventsimg2.jpg'
 import event3 from '../assets/latesteventsimg3.jpg'
 import weare from '../assets/weareavengers.jpg'
 import thorncaptain from '../assets/thorncaptain.png'
+import helo from  "../assets/try.png"
 import { useAuthState } from "react-firebase-hooks/auth";
 import { auth } from "@/firebase";
 import { useState } from "react";
@@ -14,7 +15,6 @@ import headerimg from "../assets/wholeavengers.png"
 import Aos from "aos";
 import immm from "@/assets/lol.png"
 import 'aos/dist/aos.css';
-
 import { useEffect } from "react";
 import Link from "next/link";
 
@@ -31,11 +31,13 @@ export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between border- bg-black overflow-hidden border-box">
     {/* header */}
-    <div className="w-full  flex-row gap-5 h-[max-content] flex bg-red-500 " 
+    <div className="w-full  flex-row gap-5 h-[max-content] flex " 
      data-aos="fade-in"
      data-aos-duration="800"
      data-aos-easing="ease-in-out"
      data-aos-mirror="true"
+
+     style={{backgroundImage:`url(${helo.src})` , backgroundRepeat:'no-repeat',backgroundPosition:'center center' , backgroundSize:'cover', width:'full', height:'max-content'}}
     >
       <div className="flex flex-row justify-evenly">
         <div className="w-[1px] bg-white/50 ms-[30px]"
