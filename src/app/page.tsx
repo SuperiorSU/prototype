@@ -7,6 +7,7 @@ import event2 from '../assets/latesteventsimg2.jpg'
 import event3 from '../assets/latesteventsimg3.jpg'
 import weare from '../assets/weareavengers.jpg'
 import thorncaptain from '../assets/thorncaptain.png'
+import helo from  "../assets/try.png"
 import { useAuthState } from "react-firebase-hooks/auth";
 import { auth } from "@/firebase";
 import { useState } from "react";
@@ -14,7 +15,6 @@ import headerimg from "../assets/wholeavengers.png"
 import Aos from "aos";
 import immm from "@/assets/lol.png"
 import 'aos/dist/aos.css';
-
 import { useEffect } from "react";
 import Link from "next/link";
 
@@ -31,11 +31,13 @@ export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between border- bg-black overflow-hidden border-box">
     {/* header */}
-    <div className="w-full  flex-row gap-5 h-[60vh] flex bg-red-500 " 
+    <div className="w-full  flex-row gap-5 h-[max-content] flex " 
      data-aos="fade-in"
      data-aos-duration="800"
      data-aos-easing="ease-in-out"
      data-aos-mirror="true"
+
+     style={{backgroundImage:`url(${helo.src})` , backgroundRepeat:'no-repeat',backgroundPosition:'center center' , backgroundSize:'cover', width:'full', height:'max-content'}}
     >
       <div className="flex flex-row justify-evenly">
         <div className="w-[1px] bg-white/50 ms-[30px]"
@@ -88,7 +90,7 @@ export default function Home() {
             </div>
             
           </div>
-          <div> <Image src={headerimg} className="object-center mt-[-30px]" alt=""/></div>
+          <div> <Image src={headerimg} className="object-center drop-shadow-md hover:drop-shadow-xl 	" alt="" loading="lazy"/></div>
           {/* <VideoBackground /> */}
         </div>
         
@@ -217,7 +219,7 @@ export default function Home() {
          data-aos-offset="40"    
             
             
-            >YOUR <br />AGENTS</h2>
+            >YOUR <br />TEAMS</h2>
 
           <div 
            data-aos="fade-up"
@@ -228,7 +230,7 @@ export default function Home() {
            data-aos-anchor-placement="bottom"
            data-aos-offset="40"
           >
-            <p className="text-white font-medium uppercase mt-8 text-[24px]">Choose your own character and test your skills</p>
+            <p className="text-white font-medium uppercase mt-8 text-[24px]">Choose your own team and test your skills</p>
             <br/>
             <p className="text-white text-justify pe-4">The Avengers, Earth's mightiest heroes, assemble to protect the planet from threats too great for any one individual to handle. This diverse team includes iconic figures such as Iron Man, Captain America, Thor, Black Widow, Hulk, and others, each bringing their unique abilities and strengths to the table. Together, they face off against formidable foes ranging from intergalactic conquerors to rogue artificial intelligences, demonstrating the power of teamwork and sacrifice in the face of overwhelming odds. With their unwavering commitment to justice and the greater good, the Avengers stand as a beacon of hope for humanity in a world constantly under threat.</p>
           </div>  
@@ -242,7 +244,7 @@ data-aos-duration="1500"
             ><span className="relative z-10"
           
             
-            >VIEW ALL AGENTS</span></button>
+            >VIEW TEAM </span></button>
           </div>
         </div>
 
@@ -250,9 +252,9 @@ data-aos-duration="1500"
         
       
       </div>
-      <div className="bg-white p-5 w-full h-[65vh] flex items-center justify-around">
-        <div className="grid grid-cols-5 gap-3">
-          <div className="col-span-2 p-4">
+      <div className="bg-white p-5 w-full h-[max-content] flex items-center justify-around">
+        <div className="grid grid-cols-6 text-center gap-3">
+          <div className="col-span-3 p-4 text-start">
             <div className="flex gap-2 justify-evenly">
               <div className="h-full w-[.5px] bg-black"></div>
               <div className="text-red-500">
