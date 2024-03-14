@@ -1,6 +1,10 @@
-import React from "react";
+"use client"
 
-const success = ({result}) => {
+import React from "react";
+import thorncaptain from '../assets/thorncaptain.png'
+import Image from "next/image";
+
+const Success = ({result}) => {
   return (
     <div className="p-5 mt-5 bg-red-500 w-full">
       {/* div for image */}
@@ -42,21 +46,11 @@ const success = ({result}) => {
             data-aos-offset="40"
           >
             <p className="text-white font-medium uppercase mt-8 text-[24px]">
-              Choose your own character and test your skills
+             Try Again ----- for outher un known
             </p>
             <br />
             <p className="text-white text-justify pe-4">
-              The Avengers, Earth's mightiest heroes, assemble to protect the
-              planet from threats too great for any one individual to handle.
-              This diverse team includes iconic figures such as Iron Man,
-              Captain America, Thor, Black Widow, Hulk, and others, each
-              bringing their unique abilities and strengths to the table.
-              Together, they face off against formidable foes ranging from
-              intergalactic conquerors to rogue artificial intelligences,
-              demonstrating the power of teamwork and sacrifice in the face of
-              overwhelming odds. With their unwavering commitment to justice and
-              the greater good, the Avengers stand as a beacon of hope for
-              humanity in a world constantly under threat.
+              100 Point credited
             </p>
           </div>
           <br />
@@ -74,4 +68,4 @@ const success = ({result}) => {
   );
 };
 
-export default success;
+export default Success;
