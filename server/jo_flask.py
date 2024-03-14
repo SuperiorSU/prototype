@@ -4,7 +4,7 @@ from flask_cors import CORS  # Import CORS from flask_cors
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import accuracy_score
-
+# ye team ka data deta hai.......input location and emeny
 # Load the dataset
 df = pd.read_csv("jo.csv")
 
