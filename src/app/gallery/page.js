@@ -19,7 +19,17 @@ import black from "@/assets/black.png"
 import natashabg from "@/assets/natashag.jpg"
 import blackbg from "@/assets/blackbg.jpg"
 
+// for aos
+import Aos from "aos";
+import 'aos/dist/aos.css';
+import { useEffect } from "react";
+
+
 const page = () => {
+  useEffect(()=>{
+    Aos.init()
+  })
+
   const [selectedCharacter, setSelectedCharacter] = useState(null);
 
   const handleCharacterClick = (character) => {
@@ -135,11 +145,29 @@ const page = () => {
             backgroundSize: "contain",
             backgroundRepeat:"no-repeat"
           }}
+
+         
         >
-          <h2 className="text-white font-bold text-[64px] border-b-[.5px] border-white">
+          <h2 className="text-white font-bold text-[64px] border-b-[.5px] border-white"
+           data-aos="slide-left"
+           data-aos-delay="40"
+           data-aos-duration="1000"
+           data-aos-easing="ease-in-out"
+           data-aos-mirror="true"
+           data-aos-anchor-placement="bottom"
+           data-aos-offset="40"
+          >
             {selectedCharacter ? selectedCharacter.name : "WELCOME TO THE GALLERY"}
           </h2>
-          <p className="text-white uppercase pe-40">{selectedCharacter ? selectedCharacter.descHead : "KNOW MORE ABOUT THE AVENGERS AND CHANGE THE GAME"}</p>
+          <p className="text-white uppercase pe-40" 
+           data-aos="slide-left"
+           data-aos-delay="40"
+           data-aos-duration="1400"
+           data-aos-easing="ease-in-out"
+           data-aos-mirror="true"
+           data-aos-anchor-placement="bottom"
+           data-aos-offset="40"
+          >{selectedCharacter ? selectedCharacter.descHead : "KNOW MORE ABOUT THE AVENGERS AND CHANGE THE GAME"}</p>
         </div>
         <div className="col-span-1 bg-black">
           <div className="flex flex-col">

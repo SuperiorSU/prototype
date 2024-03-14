@@ -19,9 +19,9 @@ import { useEffect } from "react";
 import Link from "next/link";
 
 export default function Home() {
-  useEffect(()=>{
+ useEffect(()=>{
     Aos.init()
-  })
+  }) 
 
   const [ user] = useAuthState(auth)
 
