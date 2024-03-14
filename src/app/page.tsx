@@ -10,9 +10,11 @@ import thorncaptain from '../assets/thorncaptain.png'
 import { useAuthState } from "react-firebase-hooks/auth";
 import { auth } from "@/firebase";
 import { useState } from "react";
+import headerimg from "../assets/wholeavengers.png"
 import Aos from "aos";
 import 'aos/dist/aos.css';
 import { useEffect } from "react";
+
 export default function Home() {
   useEffect(()=>{
     Aos.init()
@@ -26,7 +28,7 @@ export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between border- bg-black overflow-hidden border-box">
     {/* header */}
-    <div className="w-full h-[60vh] flex bg-red-500 " 
+    <div className="w-full  flex-row gap-5 h-[60vh] flex bg-red-500 " 
      data-aos="fade-in"
      data-aos-duration="800"
      data-aos-easing="ease-in-out"
