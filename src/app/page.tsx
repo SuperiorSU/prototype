@@ -12,6 +12,7 @@ import { auth } from "@/firebase";
 import { useState } from "react";
 import headerimg from "../assets/wholeavengers.png"
 import Aos from "aos";
+import immm from "@/assets/lol.png"
 import 'aos/dist/aos.css';
 
 import { useEffect } from "react";
@@ -249,15 +250,27 @@ data-aos-duration="1500"
         
       
       </div>
-      <div className="bg-white p-5 w-full h-[65vh] flex items-center">
+      <div className="bg-white p-5 w-full h-[65vh] flex items-center justify-around">
         <div className="grid grid-cols-5 gap-3">
           <div className="col-span-2 p-4">
             <div className="flex gap-2 justify-evenly">
               <div className="h-full w-[.5px] bg-black"></div>
               <div className="text-red-500">
-                  <h2 className="text-[72px] font-bold text-black">HALL OF FAME</h2>
+                  <h2 className="text-[72px] font-bold text-black"
+                   data-aos="slide-right"
+                   data-aos-delay="40"
+                   data-aos-duration="1000"
+                   data-aos-easing="ease-in-out"
+                   data-aos-mirror="true"
+                   data-aos-anchor-placement="bottom"
+                   data-aos-offset="40"
+                  >HALL OF FAME</h2>
                   <br/>
-                  <p className="font-medium pe-10">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem earum officiis inventore cupiditate repudiandae, possimus natus ipsa ab. Quos quam odit totam maiores unde provident doloremque in velit inventore quisquam.</p>
+                  <p className="font-medium pe-10" 
+                  data-aos="fade-up"
+                  data-aos-easing="linear"
+                  data-aos-duration="1400" 
+                  >Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem earum officiis inventore cupiditate repudiandae, possimus natus ipsa ab. Quos quam odit totam maiores unde provident doloremque in velit inventore quisquam.</p>
                   <br/>
                   <Link href ="/gallery">
                     <button className="text-red hover:before:bg-redborder-red-500 relative h-[60px] w-[180px] overflow-hidden border border-red-500 bg-white px-3 text-red-500 shadow-md transition-all before:absolute before:bottom-0 before:left-0 before:top-0 before:z-0 before:h-full before:w-0 before:bg-black before:transition-all before:duration-500 hover:text-white hover:shadow-black/50 hover:before:left-0 hover:before:w-full"
@@ -276,7 +289,15 @@ data-aos-duration="1500"
             </div>
           </div>
           <div className="col-span-3">
-
+            <Image src={immm} alt="" className="w-[70%] mx-auto"
+              data-aos="slide-left"
+              data-aos-delay="40"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+              data-aos-mirror="true"
+              data-aos-anchor-placement="bottom"
+              data-aos-offset="40"
+            />
           </div>
         </div>
       </div>
