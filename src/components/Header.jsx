@@ -19,8 +19,8 @@ const Header = () => {
   }, [user]); // Only run this effect when user changes
 
   return (
-    <div>
-      <div className='flex flex-row justify-between p-2 items-center text-white border-b-[1px] border-white/55 bg-purple-950'>
+    <div className='sticky top-0 z-10 bg-black backdrop-filter backdrop-blur-lg bg-opacity-75 '>
+      <div className='flex flex-row justify-between p-2 items-center text-white border-b-[1px] border-white/55 '>
         <div>
           <div className="logo">
             <Image src={logo} height="50" alt="" />
@@ -28,10 +28,26 @@ const Header = () => {
         </div>
         <div>
           <ul className='flex gap-5 justify-center items-center list-none'>
-            <li>HOME</li>
-            <li>CAST</li>
-            <li>GALLERY</li>
-            <li>TEAMS</li>
+            <li>
+              <Link href ="/">
+                HOME
+              </Link>
+            </li>
+            <li>
+            <Link href ="/teams">
+                TEAMS
+              </Link>
+            </li>
+            <li>
+            <Link href ="/community">
+                COMMUNITY
+              </Link>
+            </li>
+            <li>
+            <Link href ="/gallery">
+                GALLERY
+              </Link>
+            </li>
           </ul>
         </div>
 
