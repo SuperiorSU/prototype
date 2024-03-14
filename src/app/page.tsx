@@ -7,6 +7,9 @@ import iron from "../assets/ironmanbg.jpg"
 import spider from "../assets/spidermanbg.jpg"
 import Vision from "../assets/visionbg.jpg"
 import Button from "../components/Button"
+import { useAuthState } from "react-firebase-hooks/auth";
+import { auth } from "@/firebase";
+import { useState } from "react";
 
 
 // const raleway = Raleway({
@@ -14,6 +17,8 @@ import Button from "../components/Button"
 //   weight:['900'],
 // })
 export default function Home() {
+  const [ user] = useAuthState(auth)
+  
   return (
     <main className="flex min-h-screen flex-col items-center justify-between border- bg-black">
       {/* header */}
@@ -23,7 +28,7 @@ export default function Home() {
           <div className=" p-4 ps-20 w-[45%]">
             <div className="mt-[30%]">
               <h1 className="text-white text-[32px] text-start font-bold">Welcome</h1>
-              <h2 className="text-black text-[72px] mt-[-20px] font-bold">SUJAL</h2>
+              <h2 className="text-black text-[72px] mt-[-20px] font-bold">{user == null ? 'User' : user?.displayName}</h2>
               <div className="h-[.5px] bg-white "></div>
               <div className="mt-5">
               <button className="text-red hover:before:bg-redborder-red-500 relative h-[60px] w-[180px] overflow-hidden border border-red-500 bg-white px-3 text-red-500 shadow-md transition-all before:absolute before:bottom-0 before:left-0 before:top-0 before:z-0 before:h-full before:w-0 before:bg-black before:transition-all before:duration-500 hover:text-white hover:shadow-black/50 hover:before:left-0 hover:before:w-full"><span className="relative z-10">Explore More</span></button>

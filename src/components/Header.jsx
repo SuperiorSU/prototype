@@ -9,7 +9,7 @@ import Link from 'next/link';
 import Button from './Button';
 
 const Header = () => {
-  const [user] = useAuthState(auth);
+  const [ user ] = useAuthState(auth);
   const [pic, setPic] = useState(null);
 
   useEffect(() => {
