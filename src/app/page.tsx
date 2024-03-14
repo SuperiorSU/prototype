@@ -8,6 +8,7 @@ import spider from "../assets/spidermanbg.jpg"
 import Vision from "../assets/visionbg.jpg"
 import Button from "../components/Button"
 
+
 // const raleway = Raleway({
 //   subsets:['latin'],
 //   weight:['900'],
@@ -16,7 +17,7 @@ export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between border- bg-black">
       {/* header */}
-      <div className="w-full h-[60vh] bg-red-500">
+      <div className="w-full h-[60vh] bg-red-500 ">
         <div className="flex flex-row flex-wrap gap-3">
           <div className="w-[1px] bg-white/50 ms-[30px]"></div>
           <div className=" p-4 ps-20 w-[45%]">
@@ -31,7 +32,9 @@ export default function Home() {
             </div>
             
           </div>
-          <div></div>
+          <div>
+          
+          </div>
         </div>
       </div>
       {/* latest events vala div */}
