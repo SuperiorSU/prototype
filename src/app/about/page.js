@@ -92,12 +92,19 @@ const page = () => {
       </div>
         </div>
         <div className='bg-white p-10'>
-            <div className='text-black flex flex-wrap'>
+            <div className='text-black flex flex-wrap justify-between'>
                 <div className='border-l-[.5px] border-black'>
                     <h2 className='text-[72px] font-bold'>MEET THE TEAM</h2>
                     <p className='border-b-[1px] border-black'>THE FUTURE AVENGERS(DEVELOPERS)</p>
+                    <ul className='list-none text-red-500 font-bold text-[42px] '>
+                        <li>KUMAR SUJAL (LEADER)</li>
+                        <li>MUKUL TIWARI</li>
+                        <li>ARYAN KAMBOJ</li>
+                    </ul>
                 </div>
-                <div></div>
+                <div className='bg-red-500 p-40 ms-10 w-[40%]'>
+
+                </div>
             </div>
         </div>
     </div>
