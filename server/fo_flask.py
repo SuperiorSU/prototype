@@ -48,7 +48,7 @@ def predict_battle_outcome(battle_details):
     return "Victory" if prediction[0] == "Victory" else "Defeat"
 
 # Flask endpoint for prediction
-@app.route('/predict', methods=['POST'])
+@app.route('/', methods=['POST'])
 def predict():
     # Get data from the request
     battle_details = request.json
